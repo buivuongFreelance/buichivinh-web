@@ -45,3 +45,5 @@ You can head back to the documentation, continuing browsing it from the [templat
 
 huonglanphanthi395@gmail.com
 Zaq1@wsxcde34rfv
+
+pm2 start --name=website npm -- start

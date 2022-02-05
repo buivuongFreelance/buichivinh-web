@@ -1,0 +1,258 @@
+/*---------------------------------
+        Footer CSS 
+-----------------------------------*/
+.footer-wrap {
+    position: relative;
+
+    .footer-top {
+        position: relative;
+
+        .footer-shape-1 {
+            position: absolute;
+            bottom: -5px;
+            left: 40px;
+        }
+
+        .footer-widget {
+            margin-bottom: 30px;
+
+            .footer-logo {
+                margin-bottom: 20px;
+                display: block;
+            }
+
+            .footer-widget-title {
+                margin: 0 0 20px;
+                font-size: 20px;
+                font-weight: 600;
+                color: $clr_white;
+                position: relative;
+                display: inline-block;
+
+                &:after {
+                    position: absolute;
+                    top: 15px;
+                    right: -40px;
+                    content: "";
+                    width: 25px;
+                    height: 1px;
+                    background: $clr_orange;
+                }
+
+            }
+
+            .footer-menu {
+                li {
+                    a {
+                        margin: 0 0 14px;
+                        display: inline-block;
+                        font-size: 15px;
+                        position: relative;
+
+                        &:after {
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            content: "";
+                            width: 0;
+                            height: 1px;
+                            visibility: hidden;
+                            opacity: 0;
+
+                            @include transition(0.3s);
+                        }
+
+                        &:hover {
+
+                            &:after {
+                                width: 100%;
+                                visibility: visible;
+                                opacity: 1;
+                            }
+                        }
+                    }
+
+                    &:last-child {
+                        a {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+
+            .newsletter-form {
+                margin-top: 20px;
+                .form-group {
+                    @extend %flex;
+
+                    input {
+                        width: calc(100% - 130px);
+                        height: 40px;
+                        background: transparent;
+                        font-size: 14px;
+                        padding: 5px 10px 5px 15px;
+                        color: $clr_white;
+                        margin-right: 10px;
+                        border-radius: 5px;
+                        border: 1px solid rgba(255, 255, 255, 0.2);
+
+                        &::placeholder {
+                            color: $clr_white;
+                            opacity: 0.8;
+                        }
+                    }
+
+                    button {
+                        width: 120px;
+                        background: $clr_orange;
+                        padding: 6px 10px;
+                        border: none;
+                        border-radius: 5px;
+                        color: $clr_white;
+                    }
+                }
+
+                .newsletter-subtext {
+                    font-size: 14px;
+                    line-height: 26px;
+                    margin: 10px 0 0;
+                    display: block;
+                    color: rgba(255, 255, 255, 0.6);
+                }
+
+            }
+        }
+    }
+
+    .footer-bottom {
+        position: relative;
+        padding: 20px 0;
+
+
+        .copyright {
+
+            p {
+                color: $clr_white;
+                margin: 0;
+                font-size:14px;
+
+                a {
+                    color: $clr_orange;
+
+                }
+
+            }
+        }
+    }
+
+    &.style1 {
+        position: relative;
+
+        .footer-shape-1 {
+            position: absolute;
+            bottom: 0;
+            left: 30px;
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+
+            .contact-item {
+                .contact-icon {
+                    box-shadow: 0 0 15px rgba(36, 167, 126, 0.2);
+                }
+            }
+
+            .footer-menu {
+                li {
+                    a {
+                        color: $clr_white;
+
+                        &:hover {
+                            color: $clr_orange;
+
+                            &:after {
+                                background: $clr_orange;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+            .footer-bottom-menu {
+                li {
+                    display: inline-block;
+                    margin-left: 20px;
+
+                    &:first-child {
+                        margin: 0;
+                    }
+
+                    a {
+                        color: $clr_white;
+                        font-size: 14px;
+
+                        &:hover {
+                            color: $clr_orange;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+
+}
+
+.comp-desc {
+    color: $clr_white;
+    margin-bottom: 20px;
+}
+
+// .contact-item {
+//     position: relative;
+//     padding-left: 42px;
+//     margin: 0 0 25px;
+
+//     &:last-child {
+//         margin-bottom: 0;
+//     }
+
+//     .contact-icon {
+//         position: absolute;
+//         top: -5px;
+//         left: 0;
+//         width: 30px;
+//         height: 30px;
+//         background-color: $clr_white;
+//         text-align: center;
+
+//         i {
+//             font-size: 16px;
+//             line-height: 1.9;
+//         }
+//     }
+
+//     .contact-info {
+//         p {
+//             font-size: 15px;
+//             font-weight: 600;
+//             line-height: 1.1;
+//             margin: 0 0 5px;
+
+//         }
+
+//         span,
+//         a {
+//             display: block;
+//             font-size: 15px;
+//             line-height: 1.6;
+//         }
+//     }
+// }
